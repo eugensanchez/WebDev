@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Product-Sans;
+    src: url('font/product-sans.otf')
+    format("opentype");
+}
+
+body {
+    font-family: Product-Sans;
+}
+
+nav {
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    width: 100%;
+    color: gray;
+    background-color: white;
+    box-shadow:0px 1px 5px #666;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+
+
+}
+nav a {
+    color: dimgray;
+    font-size: 17px;
+    text-decoration:none;
+    padding-left: 10px;
+
+}
+
+nav a.right{
+    float: right;
+    padding-right: 10px;
+}
+nav svg{
+    width: 50px;
+    fill: dimgray;
+    vertical-align: middle;
+}
+
+#nav-logo{
+    height: 20px;
+    width: 80px;
+}
+
+nav a:hover {
+    color: #4885ed;
+}
+
+nav svg:not(:hover) path{
+    fill: dimgray;
+}
+
+form.search {
+    margin-top: 10%;
+    text-align: center;
+}
+
+form.search p{
+    font-size: 60px;
+    color:#4885ed;
+}
+
+
+input{
+    width: 500px;
+    font-size: 18px;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border 0.5s;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: solid 2px #4885ed;
+
+}
+input:hover{
+    border-bottom: solid 2px #4885ed;;
+}
+
+form.search button{
+    width: 190px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+
+button{
+    cursor: pointer ;
+    display: inline-block;
+    background: #4885ed;
+    color: white;
+    border-radius: 5px;
+    border: #4885ed;
+    text-align: center;
+}
+
+
+div.head-first-result{
+    text-align: center;
+}
+div.first-result{
+    display: inline-block !important;
+
+    margin-top: 50px;
+    margin-left: 40px;
+    vertical-align: middle;
+    text-align: left;
+
+}
+div img{
+    height: 300px;
+    border-radius: 100%;
+}
+
+div.comments{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+div span.fa-star:hover{
+    fill: gold
+}
+
